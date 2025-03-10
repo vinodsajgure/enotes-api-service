@@ -1,0 +1,169 @@
+spring:
+  application:
+    name: enotes-api
+  profiles:
+      active: test
+
+---
+# Dev profile configuration   
+spring:
+  config:
+      activate: 
+        on-profile: dev
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  mail:
+    host: smtp.gmail.com
+    username: vin.sajgure@gmail.com
+    port: '587'
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    password: txgfvwdhhpgktdnp
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    password: Vinod@6891
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/enotes_dev
+file:
+  upload:
+    path: notes/
+server:
+  port: '8085'
+  
+---  
+# Test profile configuration   
+spring:
+  application:
+    name: enotes-api
+    config:
+      activate: 
+        on-profile:test
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  mail:
+    host: smtp.gmail.com
+    username: vin.sajgure@gmail.com
+    port: '587'
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    password: txgfvwdhhpgktdnp
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    password: Vinod@6891
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/enotes_test
+file:
+  upload:
+    path: notes/
+server:
+  port: '8085'
+--- 
+
+# UAT profile configuration   
+spring:
+  application:
+    name: enotes-api
+    config:
+      activate: 
+        on-profile:uat
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  mail:
+    host: smtp.gmail.com
+    username: vin.sajgure@gmail.com
+    port: '587'
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    password: txgfvwdhhpgktdnp
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    password: Vinod@6891
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/enotes_uat
+file:
+  upload:
+    path: notes/
+server:
+  port: '8085'
+ 
+---  
+# PROD profile configuration   
+spring:
+  application:
+    name: enotes-api
+    config:
+      activate: 
+        on-profile:prod
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  mail:
+    host: smtp.gmail.com
+    username: vin.sajgure@gmail.com
+    port: '587'
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    password: txgfvwdhhpgktdnp
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    password: Vinod@6891
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/enotes_prod
+file:
+  upload:
+    path: notes/
+server:
+  port: '8085'
+    
+    
