@@ -16,18 +16,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.enotes_api.dto.ToDoDto;
+import com.demo.enotes_api.endpoint.ToDoControllerEndPoint;
 import com.demo.enotes_api.service.ToDoService;
 import com.demo.enotes_api.util.CommonUtil;
 
 @RestController
-@RequestMapping("/api/v1/toDo")
-public class ToDoController {
+public class ToDoController implements ToDoControllerEndPoint {
 
 	@Autowired
 	private ToDoService toDoService;
 	
-	@PostMapping()
-	@PreAuthorize("hasRole('USER')")
+//	@PostMapping()
+//	@PreAuthorize("hasRole('USER')")
+	@Override
 	public ResponseEntity<?> saveToDo(@RequestBody ToDoDto toDoDto){
 		Boolean saveToDo = toDoService.saveToDo(toDoDto);
 		if(saveToDo) {
@@ -37,8 +38,9 @@ public class ToDoController {
 		}
 	}
 	
-	@GetMapping("/{id}")
-	@PreAuthorize("hasRole('USER')")
+//	@GetMapping("/{id}")
+//	@PreAuthorize("hasRole('USER')")
+	@Override
 	public ResponseEntity<?> getToDoById(@PathVariable Integer id){
 		ToDoDto toDoById = toDoService.getToDoById(id);
 		if(!ObjectUtils.isEmpty(toDoById)) {
@@ -48,8 +50,9 @@ public class ToDoController {
 		}
 	}
 	
-	@GetMapping("/toDoList")
-	@PreAuthorize("hasRole('USER')")
+//	@GetMapping("/toDoList")
+//	@PreAuthorize("hasRole('USER')")
+	@Override
 	public ResponseEntity<?> getAllTodosByUser(){
 		List<ToDoDto> toDoDtoList = toDoService.getToDosByUser();
 		if(!CollectionUtils.isEmpty(toDoDtoList)) {

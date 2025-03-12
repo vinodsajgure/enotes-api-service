@@ -1,0 +1,8 @@
+2025-12-59 09:59:34.857 INFO  [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-59 09:59:34.860 INFO  [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-59 09:59:34.865 INFO  [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-12-59 09:59:35.223 INFO  [http-nio-8085-exec-2] c.d.e.controller.AuthController - AuthController : registerUser () : Execution Start
+2025-12-59 09:59:35.226 INFO  [http-nio-8085-exec-2] c.d.e.service.impl.AuthServiceImpl - AuthServiceImpl : registerUser () : Execution Start
+2025-12-59 09:59:42.662 INFO  [http-nio-8085-exec-2] c.d.e.service.impl.AuthServiceImpl - message :email sent successfully
+2025-12-59 09:59:42.664 INFO  [http-nio-8085-exec-2] c.d.e.service.impl.AuthServiceImpl - AuthController : registerUser () : Execution End
+2025-12-59 09:59:42.664 INFO  [http-nio-8085-exec-2] c.d.e.controller.AuthController - AuthController : registerUser () : Execution End

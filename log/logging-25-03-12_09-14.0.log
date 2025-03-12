@@ -1,0 +1,5 @@
+2025-12-14 09:14:03.427 INFO  [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-14 09:14:03.474 INFO  [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-14 09:14:03.478 INFO  [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-14 09:14:04.832 ERROR [http-nio-8085-exec-2] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleUsernameNotFoundException() : Bad credentials
+2025-12-14 09:14:04.923 WARN  [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
