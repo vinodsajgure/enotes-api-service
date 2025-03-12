@@ -1,0 +1,5 @@
+2025-12-37 09:37:58.559 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-12-37 09:37:58.648 INFO  [restartedMain] c.d.enotes_api.EnotesApiApplication - Starting EnotesApiApplication using Java 21.0.2 with PID 5260 (F:\New sts4.4 Workspace\enotes-api\target\classes started by VINOD in F:\New sts4.4 Workspace\enotes-api)
+2025-12-37 09:37:58.650 INFO  [restartedMain] c.d.enotes_api.EnotesApiApplication - The following 1 profile is active: "dev"
+2025-12-37 09:37:58.767 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-37 09:37:58.768 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'

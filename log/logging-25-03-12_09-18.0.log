@@ -1,0 +1,14 @@
+2025-12-18 09:18:22.279 ERROR [http-nio-8085-exec-9] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleUsernameNotFoundException() : Bad credentials
+2025-12-18 09:18:22.283 WARN  [http-nio-8085-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-12-18 09:18:35.249 ERROR [http-nio-8085-exec-2] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleUsernameNotFoundException() : Bad credentials
+2025-12-18 09:18:35.253 WARN  [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-12-18 09:18:38.071 ERROR [http-nio-8085-exec-3] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleUsernameNotFoundException() : Bad credentials
+2025-12-18 09:18:38.074 WARN  [http-nio-8085-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-12-18 09:18:40.008 ERROR [http-nio-8085-exec-5] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleUsernameNotFoundException() : Bad credentials
+2025-12-18 09:18:40.010 WARN  [http-nio-8085-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-12-18 09:18:41.729 ERROR [http-nio-8085-exec-7] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleUsernameNotFoundException() : Bad credentials
+2025-12-18 09:18:41.733 WARN  [http-nio-8085-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-12-18 09:18:43.262 ERROR [http-nio-8085-exec-9] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleUsernameNotFoundException() : Bad credentials
+2025-12-18 09:18:43.265 WARN  [http-nio-8085-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-12-18 09:18:45.319 ERROR [http-nio-8085-exec-2] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleUsernameNotFoundException() : Bad credentials
+2025-12-18 09:18:45.321 WARN  [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]

@@ -1,0 +1,4 @@
+2025-12-21 09:21:03.050 INFO  [http-nio-8085-exec-9] c.d.e.controller.AuthController - AuthController : registerUser () : Execution Start
+2025-12-21 09:21:03.052 INFO  [http-nio-8085-exec-9] c.d.e.service.impl.AuthServiceImpl - AuthServiceImpl : registerUser () : Execution Start
+2025-12-21 09:21:03.067 ERROR [http-nio-8085-exec-9] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleIllegalArgumentException() : Invalid Role Id
+2025-12-21 09:21:03.070 WARN  [http-nio-8085-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Invalid Role Id]

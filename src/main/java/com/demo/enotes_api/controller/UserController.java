@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.demo.enotes_api.dto.ChangePasswordRequest;
 import com.demo.enotes_api.dto.UserRequest;
 import com.demo.enotes_api.dto.UserResponse;
+import com.demo.enotes_api.endpoint.UserControllerEndPoint;
 import com.demo.enotes_api.entity.User;
 import com.demo.enotes_api.service.UserService;
 import com.demo.enotes_api.util.CommonUtil;
@@ -26,8 +27,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/v1/user")
-public class UserController {
+public class UserController implements UserControllerEndPoint{
 	
 	@Autowired
 	private UserService userService;
@@ -35,7 +35,7 @@ public class UserController {
 	@Autowired
 	private ModelMapper modelMapper;
 	
-	@GetMapping("/{userId}")
+	@Override
 	public ResponseEntity<?> getUserById(@PathVariable Integer userId) {
 		log.info("UserController : getUserById () : Start");
 		UserRequest userById = userService.getUserById(userId);
@@ -46,7 +46,7 @@ public class UserController {
 		}
 	}
 
-	@GetMapping("/userList")
+	@Override
 	public ResponseEntity<?> getAllUsers() {
 		List<UserRequest> userDtoList = userService.getAllUsers();
 		if (!CollectionUtils.isEmpty(userDtoList)) {
@@ -56,14 +56,14 @@ public class UserController {
 		}
 	}
 
-	@GetMapping("/loggedInUser")
+	@Override
 	public ResponseEntity<?> getLoggedInUser(){
 		User loggedInUser = CommonUtil.getLoggedInUser();
 		UserResponse userResponse = modelMapper.map(loggedInUser, UserResponse.class);
 		return CommonUtil.createBuildResponse(HttpStatus.OK, userResponse);
 	}
 	
-	@PostMapping("/chng-pswd")
+	@Override
 	public ResponseEntity<?> changeUserPassword(@RequestBody ChangePasswordRequest passwordRequest){
 		userService.changeUserPassword(passwordRequest);
 		return CommonUtil.createBuildResponse(HttpStatus.OK, "Passoword changed Successfully.");

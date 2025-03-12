@@ -10,16 +10,26 @@ spring:
   config:
       activate: 
         on-profile: dev
+  datasource:
+    username: root
+    password: Vinod@6891
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/enotes_dev      
   jpa:
     properties:
-      hibernate:
+     hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: update
+          ddl-auto: create
     show-sql: 'true'
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB  
   mail:
     host: smtp.gmail.com
     username: vin.sajgure@gmail.com
+    password: txgfvwdhhpgktdnp
     port: '587'
     properties:
       mail:
@@ -27,16 +37,6 @@ spring:
           starttls:
             enable: 'true'
           auth: 'true'
-    password: txgfvwdhhpgktdnp
-  servlet:
-    multipart:
-      max-file-size: 100MB
-      max-request-size: 100MB
-  datasource:
-    password: Vinod@6891
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    url: jdbc:mysql://localhost:3306/enotes_dev
 file:
   upload:
     path: notes/
@@ -46,21 +46,29 @@ server:
 ---  
 # Test profile configuration   
 spring:
-  application:
-    name: enotes-api
-    config:
+  config:
       activate: 
-        on-profile:test
+        on-profile: dev
+  datasource:
+    username: root
+    password: Vinod@6891
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/enotes_dev      
   jpa:
     properties:
-      hibernate:
+     hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: update
+          ddl-auto: create
     show-sql: 'true'
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB  
   mail:
     host: smtp.gmail.com
     username: vin.sajgure@gmail.com
+    password: txgfvwdhhpgktdnp
     port: '587'
     properties:
       mail:
@@ -68,16 +76,6 @@ spring:
           starttls:
             enable: 'true'
           auth: 'true'
-    password: txgfvwdhhpgktdnp
-  servlet:
-    multipart:
-      max-file-size: 100MB
-      max-request-size: 100MB
-  datasource:
-    password: Vinod@6891
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    url: jdbc:mysql://localhost:3306/enotes_test
 file:
   upload:
     path: notes/
@@ -87,21 +85,29 @@ server:
 
 # UAT profile configuration   
 spring:
-  application:
-    name: enotes-api
-    config:
+  config:
       activate: 
-        on-profile:uat
+        on-profile: dev
+  datasource:
+    username: root
+    password: Vinod@6891
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/enotes_dev      
   jpa:
     properties:
-      hibernate:
+     hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: update
+          ddl-auto: create
     show-sql: 'true'
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB  
   mail:
     host: smtp.gmail.com
     username: vin.sajgure@gmail.com
+    password: txgfvwdhhpgktdnp
     port: '587'
     properties:
       mail:
@@ -109,16 +115,6 @@ spring:
           starttls:
             enable: 'true'
           auth: 'true'
-    password: txgfvwdhhpgktdnp
-  servlet:
-    multipart:
-      max-file-size: 100MB
-      max-request-size: 100MB
-  datasource:
-    password: Vinod@6891
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    url: jdbc:mysql://localhost:3306/enotes_uat
 file:
   upload:
     path: notes/
@@ -128,21 +124,29 @@ server:
 ---  
 # PROD profile configuration   
 spring:
-  application:
-    name: enotes-api
-    config:
+  config:
       activate: 
-        on-profile:prod
+        on-profile: dev
+  datasource:
+    username: root
+    password: Vinod@6891
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/enotes_dev      
   jpa:
     properties:
-      hibernate:
+     hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: update
+          ddl-auto: create
     show-sql: 'true'
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB  
   mail:
     host: smtp.gmail.com
     username: vin.sajgure@gmail.com
+    password: txgfvwdhhpgktdnp
     port: '587'
     properties:
       mail:
@@ -150,16 +154,6 @@ spring:
           starttls:
             enable: 'true'
           auth: 'true'
-    password: txgfvwdhhpgktdnp
-  servlet:
-    multipart:
-      max-file-size: 100MB
-      max-request-size: 100MB
-  datasource:
-    password: Vinod@6891
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    url: jdbc:mysql://localhost:3306/enotes_prod
 file:
   upload:
     path: notes/
