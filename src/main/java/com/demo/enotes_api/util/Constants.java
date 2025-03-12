@@ -6,4 +6,7 @@ public class Constants {
 	
 	public static final String MOBILE_REGEX = "^[7-9][0-9]{9}$";
 	
+	public static final String DEFAULT_PAGENO = "0";
+	public static final String DEFAULT_PAGESIZE = "10";
+	
 }

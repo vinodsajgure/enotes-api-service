@@ -32,10 +32,9 @@ public class CategoryController implements CategoryControllerEndPoint {
 	@Autowired
 	private CategoryService categoryService;
 
-//	@PostMapping()
-//	@PreAuthorize("hasRole('ADMIN')")
+
 	@Override
-	public ResponseEntity<?> saveCategory(@RequestBody CategoryDto categoryDto) {
+	public ResponseEntity<?> saveCategory(CategoryDto categoryDto) {
 		Boolean saveCategory = categoryService.saveCategory(categoryDto);
 
 		if (saveCategory) {
@@ -48,8 +47,7 @@ public class CategoryController implements CategoryControllerEndPoint {
 
 	}
 
-//	@GetMapping()
-//	@PreAuthorize("hasRole('ADMIN')")
+
 	@Override
 	public ResponseEntity<?> getAllCategories() {
 		List<CategoryDto> allCategories = categoryService.getAllCategories();
@@ -62,8 +60,7 @@ public class CategoryController implements CategoryControllerEndPoint {
 		}
 	}
 
-//	@GetMapping("/ActiveCategories")
-//	@PreAuthorize("hasAnyRole('USER','ADMIN')")
+
 	@Override
 	public ResponseEntity<?> getAllActiveCategories() {
 		List<CategoryResponse> allCategories = categoryService.getAllActiveCategories();
@@ -75,10 +72,9 @@ public class CategoryController implements CategoryControllerEndPoint {
 		}
 	}
 
-//	@GetMapping("/{id}")
-//	@PreAuthorize("hasRole('ADMIN')")
+
 	@Override
-	public ResponseEntity<?> getCategoryDetailsById(@PathVariable Integer id) throws Exception {
+	public ResponseEntity<?> getCategoryDetailsById(Integer id) throws Exception {
 
 		CategoryDto category = categoryService.getCategoryById(id);
 		if (!ObjectUtils.isEmpty(category)) {
@@ -92,10 +88,9 @@ public class CategoryController implements CategoryControllerEndPoint {
 
 	}
 
-//	@DeleteMapping("/{id}")
-//	@PreAuthorize("hasRole('ADMIN')")
+
 	@Override
-	public ResponseEntity<?> deleteCategoryById(@PathVariable Integer id) {
+	public ResponseEntity<?> deleteCategoryById(Integer id) {
 		Boolean deleted = categoryService.deleteCategoryById(id);
 		if (deleted) {
 //			return new ResponseEntity<>("Category deleted successfully.", HttpStatus.OK);

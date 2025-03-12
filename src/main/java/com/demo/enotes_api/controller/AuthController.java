@@ -26,9 +26,9 @@ public class AuthController implements AuthControllerEndPoint {
 	@Autowired
 	private AuthService authService;
 	
-//	@PostMapping("/register")
+
 	@Override
-	public ResponseEntity<?> registerUser(@RequestBody UserRequest userDto,HttpServletRequest request) throws Exception {
+	public ResponseEntity<?> registerUser(UserRequest userDto,HttpServletRequest request) throws Exception {
 		log.info("AuthController : registerUser () : Execution Start");
 		String url = CommonUtil.getUrl(request);
 		Boolean registerdUser = authService.registerUser(userDto,url);
@@ -41,9 +41,9 @@ public class AuthController implements AuthControllerEndPoint {
 	}
 
 	
-//	@PostMapping("/login")
+
 	@Override
-	public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest){
+	public ResponseEntity<?> login(LoginRequest loginRequest){
 		LoginResponse loginResponse = authService.login(loginRequest);
 		if(ObjectUtils.isEmpty(loginResponse)){
 			CommonUtil.createBuildErrorResponseMessage(HttpStatus.BAD_REQUEST, "Invalid Credentials");
