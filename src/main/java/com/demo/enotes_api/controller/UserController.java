@@ -22,6 +22,9 @@ import com.demo.enotes_api.entity.User;
 import com.demo.enotes_api.service.UserService;
 import com.demo.enotes_api.util.CommonUtil;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController
 @RequestMapping("/api/v1/user")
 public class UserController {
@@ -34,6 +37,7 @@ public class UserController {
 	
 	@GetMapping("/{userId}")
 	public ResponseEntity<?> getUserById(@PathVariable Integer userId) {
+		log.info("UserController : getUserById () : Start");
 		UserRequest userById = userService.getUserById(userId);
 		if (!ObjectUtils.isEmpty(userById)) {
 			return CommonUtil.createBuildResponse(HttpStatus.OK, userById);

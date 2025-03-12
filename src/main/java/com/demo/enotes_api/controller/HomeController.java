@@ -1,5 +1,7 @@
 package com.demo.enotes_api.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +22,8 @@ import jakarta.servlet.http.HttpServletRequest;
 @RestController
 @RequestMapping("/api/v1/home")
 public class HomeController {
+	
+	Logger log = LoggerFactory.getLogger(HomeController.class);
 
 	@Autowired
 	private HomeService homeService;
@@ -30,11 +34,13 @@ public class HomeController {
 	
 	@GetMapping("/verify")
 	public ResponseEntity<?> verifyUserEmailAccount(@RequestParam Integer uid, @RequestParam String code) {
+		log.info("HomeController : VerifyUserEmailAccount() : Execution Start");
 		Boolean verifyUserEmailAccount = homeService.verifyUserEmailAccount(uid, code);
 
 		if (verifyUserEmailAccount) {
 			return CommonUtil.createBuildResponseMessage(HttpStatus.OK, "user account verified successfully.");
 		}
+		log.info("HomeController : VerifyUserEmailAccount() : Execution End");
 		return CommonUtil.createBuildErrorResponseMessage(HttpStatus.BAD_REQUEST, "Invalid Verfication Link.");
 	}
 

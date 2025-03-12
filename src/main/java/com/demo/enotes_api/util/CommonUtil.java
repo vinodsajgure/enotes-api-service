@@ -11,6 +11,7 @@ import com.demo.enotes_api.response_handler.GenericResponse;
 
 import jakarta.servlet.http.HttpServletRequest;
 
+
 public class CommonUtil {
 	
 		public static ResponseEntity<?> createBuildResponse(HttpStatus status, Object data){
