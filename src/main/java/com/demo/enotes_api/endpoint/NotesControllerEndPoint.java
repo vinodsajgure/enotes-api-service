@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+import static com.demo.enotes_api.util.Constants.DEFAULT_PAGENO;
+import static com.demo.enotes_api.util.Constants.DEFAULT_PAGESIZE;;
 
 @RequestMapping("/api/v1/notes")
 public interface NotesControllerEndPoint {
@@ -27,8 +29,8 @@ public interface NotesControllerEndPoint {
 	
 	@GetMapping("/user-notes")
 	@PreAuthorize("hasRole('USER')")
-	public ResponseEntity<?> getAllNotesByUser(@RequestParam(name = "pageNo", defaultValue = "0") Integer pageNo,
-			@RequestParam(name = "pageSize", defaultValue = "5") Integer pageSize);
+	public ResponseEntity<?> getAllNotesByUser(@RequestParam(name = "pageNo", defaultValue = DEFAULT_PAGENO) Integer pageNo,
+			@RequestParam(name = "pageSize", defaultValue = DEFAULT_PAGESIZE) Integer pageSize);
 	
 	@GetMapping("/soft-delete/{id}")
 	@PreAuthorize("hasRole('USER')")
@@ -69,6 +71,6 @@ public interface NotesControllerEndPoint {
 	@GetMapping("/search-notes")
 	@PreAuthorize("hasRole('USER')")
 	public ResponseEntity<?> searchNotesByUser(@RequestParam(name="keyword",defaultValue = "")String keyword,
-			@RequestParam(name = "pageNo", defaultValue = "0") Integer pageNo,
-			@RequestParam(name = "pageSize", defaultValue = "5") Integer pageSize);
+			@RequestParam(name = "pageNo", defaultValue = DEFAULT_PAGENO) Integer pageNo,
+			@RequestParam(name = "pageSize", defaultValue = DEFAULT_PAGESIZE) Integer pageSize);
 }

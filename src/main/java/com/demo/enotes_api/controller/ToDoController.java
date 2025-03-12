@@ -26,10 +26,9 @@ public class ToDoController implements ToDoControllerEndPoint {
 	@Autowired
 	private ToDoService toDoService;
 	
-//	@PostMapping()
-//	@PreAuthorize("hasRole('USER')")
+
 	@Override
-	public ResponseEntity<?> saveToDo(@RequestBody ToDoDto toDoDto){
+	public ResponseEntity<?> saveToDo(ToDoDto toDoDto){
 		Boolean saveToDo = toDoService.saveToDo(toDoDto);
 		if(saveToDo) {
 			return CommonUtil.createBuildResponseMessage(HttpStatus.CREATED, "To Do saved successfully.");
@@ -38,10 +37,9 @@ public class ToDoController implements ToDoControllerEndPoint {
 		}
 	}
 	
-//	@GetMapping("/{id}")
-//	@PreAuthorize("hasRole('USER')")
+
 	@Override
-	public ResponseEntity<?> getToDoById(@PathVariable Integer id){
+	public ResponseEntity<?> getToDoById(Integer id){
 		ToDoDto toDoById = toDoService.getToDoById(id);
 		if(!ObjectUtils.isEmpty(toDoById)) {
 			return CommonUtil.createBuildResponse(HttpStatus.OK, toDoById);
@@ -50,8 +48,7 @@ public class ToDoController implements ToDoControllerEndPoint {
 		}
 	}
 	
-//	@GetMapping("/toDoList")
-//	@PreAuthorize("hasRole('USER')")
+
 	@Override
 	public ResponseEntity<?> getAllTodosByUser(){
 		List<ToDoDto> toDoDtoList = toDoService.getToDosByUser();

@@ -36,7 +36,7 @@ public class UserController implements UserControllerEndPoint{
 	private ModelMapper modelMapper;
 	
 	@Override
-	public ResponseEntity<?> getUserById(@PathVariable Integer userId) {
+	public ResponseEntity<?> getUserById(Integer userId) {
 		log.info("UserController : getUserById () : Start");
 		UserRequest userById = userService.getUserById(userId);
 		if (!ObjectUtils.isEmpty(userById)) {
@@ -64,7 +64,7 @@ public class UserController implements UserControllerEndPoint{
 	}
 	
 	@Override
-	public ResponseEntity<?> changeUserPassword(@RequestBody ChangePasswordRequest passwordRequest){
+	public ResponseEntity<?> changeUserPassword(ChangePasswordRequest passwordRequest){
 		userService.changeUserPassword(passwordRequest);
 		return CommonUtil.createBuildResponse(HttpStatus.OK, "Passoword changed Successfully.");
 	}
