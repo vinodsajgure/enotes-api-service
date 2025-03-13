@@ -1,0 +1,2 @@
+2025-13-07 13:07 ERROR [http-nio-8085-exec-1] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleCategoryDtoValidationException() : Validations Failed
+2025-13-07 13:07 WARN  [http-nio-8085-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.demo.enotes_api.exception.CategoryDtoValidationException: Validations Failed]

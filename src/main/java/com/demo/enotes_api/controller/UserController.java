@@ -48,7 +48,7 @@ public class UserController implements UserControllerEndPoint{
 
 	@Override
 	public ResponseEntity<?> getAllUsers() {
-		List<UserRequest> userDtoList = userService.getAllUsers();
+		List<UserResponse> userDtoList = userService.getAllUsers();
 		if (!CollectionUtils.isEmpty(userDtoList)) {
 			return CommonUtil.createBuildResponse(HttpStatus.OK, userDtoList);
 		} else {

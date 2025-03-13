@@ -1,0 +1,2 @@
+2025-13-11 13:11 ERROR [http-nio-8085-exec-8] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleResourceNotFoundException() : Category id does not exists.
+2025-13-11 13:11 WARN  [http-nio-8085-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.demo.enotes_api.exception.ResourceNotFoundException: Category id does not exists.]

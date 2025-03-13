@@ -1,0 +1,5 @@
+2025-13-41 08:41 INFO  [http-nio-8085-exec-4] c.d.e.controller.AuthController - AuthController : registerUser () : Execution Start
+2025-13-41 08:41 INFO  [http-nio-8085-exec-4] c.d.e.service.impl.AuthServiceImpl - AuthServiceImpl : registerUser () : Execution Start
+2025-13-41 08:41 INFO  [http-nio-8085-exec-4] c.d.e.service.impl.AuthServiceImpl - message :email sent successfully
+2025-13-41 08:41 INFO  [http-nio-8085-exec-4] c.d.e.service.impl.AuthServiceImpl - AuthController : registerUser () : Execution End
+2025-13-41 08:41 INFO  [http-nio-8085-exec-4] c.d.e.controller.AuthController - AuthController : registerUser () : Execution End
