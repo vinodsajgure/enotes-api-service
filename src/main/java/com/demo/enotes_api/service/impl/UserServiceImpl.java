@@ -15,6 +15,7 @@ import com.demo.enotes_api.dto.ChangePasswordRequest;
 import com.demo.enotes_api.dto.EmailRequest;
 import com.demo.enotes_api.dto.ResetPasswordRequest;
 import com.demo.enotes_api.dto.UserRequest;
+import com.demo.enotes_api.dto.UserResponse;
 import com.demo.enotes_api.entity.User;
 import com.demo.enotes_api.exception.ResourceNotFoundException;
 import com.demo.enotes_api.repository.UserRepository;
@@ -47,9 +48,9 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public List<UserRequest> getAllUsers() {
+	public List<UserResponse> getAllUsers() {
 		List<User> userList = userRepository.findAll();
-		List<UserRequest> useDtolist = userList.stream().map(user -> mapper.map(userList, UserRequest.class)).toList();
+		List<UserResponse> useDtolist = userList.stream().map(user -> mapper.map(userList, UserResponse.class)).toList();
 		return useDtolist;
 	}
 	

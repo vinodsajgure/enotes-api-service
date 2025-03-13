@@ -5,6 +5,7 @@ import java.util.List;
 import com.demo.enotes_api.dto.ChangePasswordRequest;
 import com.demo.enotes_api.dto.ResetPasswordRequest;
 import com.demo.enotes_api.dto.UserRequest;
+import com.demo.enotes_api.dto.UserResponse;
 
 import jakarta.servlet.http.HttpServletRequest;
 
@@ -12,7 +13,7 @@ public interface UserService {
 
 	public UserRequest getUserById(Integer userId);
 	
-	public List<UserRequest> getAllUsers();
+	public List<UserResponse> getAllUsers();
 	
 	public void changeUserPassword(ChangePasswordRequest passwordRequest);
 
