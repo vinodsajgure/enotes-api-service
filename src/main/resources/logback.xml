@@ -11,7 +11,7 @@
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<file>log/logging.log</file>
 		<encoder>
-			<pattern>%d{yyyy-dd-mm HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>
+			<pattern>%d{yyyy-dd-mm HH:mm} %-5level [%thread] %logger{36} - %msg%n</pattern>
 		</encoder>
 		
 		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">

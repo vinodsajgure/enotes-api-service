@@ -20,7 +20,7 @@ spring:
      hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-          ddl-auto: create
+          ddl-auto: update
     show-sql: 'true'
   servlet:
     multipart:
@@ -37,11 +37,19 @@ spring:
           starttls:
             enable: 'true'
           auth: 'true'
+server:
+  port: '8080'  
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+    tags-sorter: alpha
+    path: /enotes-docs          
+  api-docs:
+    path: /enotes-api-docs
 file:
   upload:
     path: notes/
-server:
-  port: '8085'
+
   
 ---  
 # Test profile configuration   
@@ -59,7 +67,7 @@ spring:
      hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-          ddl-auto: create
+          ddl-auto: update
     show-sql: 'true'
   servlet:
     multipart:
@@ -76,11 +84,18 @@ spring:
           starttls:
             enable: 'true'
           auth: 'true'
+server:
+  port: '8081'  
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+    tags-sorter: alpha
+    path: /enotes-docs          
+  api-docs:
+    path: /enotes-api-docs
 file:
   upload:
     path: notes/
-server:
-  port: '8085'
 --- 
 
 # UAT profile configuration   
@@ -98,7 +113,7 @@ spring:
      hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-          ddl-auto: create
+          ddl-auto: update
     show-sql: 'true'
   servlet:
     multipart:
@@ -115,12 +130,19 @@ spring:
           starttls:
             enable: 'true'
           auth: 'true'
+server:
+  port: '8082'            
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+    tags-sorter: alpha
+    path: /enotes-docs          
+  api-docs:
+    path: /enotes-api-docs          
+          
 file:
   upload:
     path: notes/
-server:
-  port: '8085'
- 
 ---  
 # PROD profile configuration   
 spring:
@@ -137,7 +159,7 @@ spring:
      hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-          ddl-auto: create
+          ddl-auto: update
     show-sql: 'true'
   servlet:
     multipart:
@@ -154,10 +176,18 @@ spring:
           starttls:
             enable: 'true'
           auth: 'true'
+server:
+  port: '8080'            
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+    tags-sorter: alpha
+    path: /enotes-docs          
+  api-docs:
+    path: /enotes-api-docs          
 file:
   upload:
     path: notes/
-server:
-  port: '8085'
+
     
     

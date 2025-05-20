@@ -58,7 +58,7 @@ public class Validations {
 				if (categoryDto.getDescription().length() < 5) {
 					error.put("description", "description length should be minimum 5 chars");
 				}
-				if (categoryDto.getDescription().length() > 30) {
+				if (categoryDto.getDescription().length() > 100) {
 					error.put("description", "description length should be maximum 100 chars");
 				}
 			}
