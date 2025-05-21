@@ -1,0 +1,6 @@
+2025-21-37 12:37 INFO  [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-21-37 12:37 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-21-37 12:37 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-21-37 12:37 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-21-37 12:37 INFO  [restartedMain] c.d.enotes_api.EnotesApiApplication - Started EnotesApiApplication in 5.784 seconds (process running for 736.55)
+2025-21-37 12:37 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

@@ -1,0 +1,4 @@
+2025-21-32 10:32 ERROR [http-nio-8080-exec-4] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleException() : Access Denied
+2025-21-32 10:32 WARN  [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-21-32 10:32 ERROR [http-nio-8080-exec-7] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleException() : Access Denied
+2025-21-32 10:32 WARN  [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]

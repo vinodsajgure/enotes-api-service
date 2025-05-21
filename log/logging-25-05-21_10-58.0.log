@@ -1,0 +1,3 @@
+2025-21-58 10:58 INFO  [http-nio-8080-exec-1] c.d.e.controller.HomeController - HomeController : VerifyUserEmailAccount() : Execution Start
+2025-21-58 10:58 INFO  [http-nio-8080-exec-1] c.d.e.service.impl.HomeServiceImpl - HomeServiceImpl : VerifyUserEmailAccount () : Start
+2025-21-58 10:58 INFO  [http-nio-8080-exec-1] c.d.e.service.impl.HomeServiceImpl - message : Account verification success

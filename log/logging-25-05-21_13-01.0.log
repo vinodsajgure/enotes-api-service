@@ -1,0 +1,7 @@
+2025-21-01 13:01 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-21-01 13:01 INFO  [Thread-35] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-21-01 13:01 INFO  [Thread-35] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-21-01 13:01 INFO  [Thread-35] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2025-21-01 13:01 INFO  [Thread-35] com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2025-21-01 13:01 INFO  [restartedMain] c.d.enotes_api.EnotesApiApplication - Starting EnotesApiApplication using Java 21.0.2 with PID 10636 (F:\New sts4.4 Workspace\enotes-api\target\classes started by VINOD in F:\New sts4.4 Workspace\enotes-api)
+2025-21-01 13:01 INFO  [restartedMain] c.d.enotes_api.EnotesApiApplication - The following 1 profile is active: "dev"

@@ -1,0 +1,1 @@
+2025-21-30 12:30 INFO  [http-nio-8080-exec-10] c.d.e.s.impl.CacheMangerServiceImpl - Cache Name {} :org.springframework.cache.concurrent.ConcurrentMapCache@7ee1636
