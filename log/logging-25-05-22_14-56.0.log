@@ -1,0 +1,4 @@
+2025-22-56 14:56 ERROR [main] c.d.e.e.GlobalExceptionHandler - GlobalExceptionHandler : handleException() : Request method 'POST' is not supported
+2025-22-56 14:56 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-22-56 14:56 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-22-56 14:56 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
